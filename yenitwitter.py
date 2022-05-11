@@ -13,8 +13,8 @@ from nltk.sentiment.vader import SentimentIntensityAnalyzer
 from sklearn.feature_extraction.text import CountVectorizer
 from textblob import TextBlob
 from os import kill, write
-auth=tweepy.OAuthHandler("W5tN9EQDpxSUqGtOiNS2Ye79l","BANGXe8lqQQntLtJztfTtaNnSUE1VCZebFBjgIPSCRWY3M1Dk9")
-auth.set_access_token("1193565741510995969-5RJnTZpmBarUTBygJKDUYMb1sjAJRb","8JhbWkqoM6hFSs6FQI5Hdffe5CVICNofXLJVyvV63coOh")
+auth=tweepy.OAuthHandler(consumerKey, consumerSecret,)
+auth.set_access_token(accessToken, accessTokenSecret)
 api=tweepy.API(auth)
 
 def percentage(part,whole):
